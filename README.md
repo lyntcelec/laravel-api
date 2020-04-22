@@ -37,6 +37,14 @@ change DB_DATABASE in .env file
 ```sh
 DB_DATABASE=laravel_api
 ```
+Create laravel_api database
+```sh
+$ mysql -u root
+```
+```sh
+mysql> create database laravel_api;
+mysql> exit;
+```
 ```sh
 $ php artisan migrate
 $ php artisan passport:install
